@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,10 +7,12 @@
     android:orientation="vertical"
     tools:context="com.aabhasjindal.arch.androidkotlinboilerplate.views.main.MainActivity">
 
+
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/toolbar_normal">
+        android:layout_height="@dimen/toolbar_normal"
+        android:elevation="@dimen/elevation_xlarge">
 
         <client.yalantis.com.foldingtabbar.FoldingTabBar
             android:id="@+id/folding_tab_bar"
@@ -19,6 +21,7 @@
             android:layout_gravity="center"
             android:layout_marginBottom="@dimen/margin_normal"
             android:background="@drawable/icon_round_bg"
+            android:elevation="@dimen/elevation_normal"
             app:mainImage="@drawable/ic_screen"
             app:menu="@menu/menu_tab_bar"
             app:selectionColor="@color/selection" />
@@ -29,6 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin_normal"
             android:background="@drawable/icon_bg_round"
+            android:elevation="@dimen/elevation_normal"
             android:padding="@dimen/margin_large"
             app:srcCompat="@drawable/ic_search" />
 
@@ -39,6 +43,7 @@
             android:layout_gravity="end"
             android:layout_margin="@dimen/margin_normal"
             android:background="@drawable/icon_bg_round"
+            android:elevation="@dimen/elevation_normal"
             android:padding="@dimen/margin_large"
             app:srcCompat="@drawable/ic_menu" />
 
@@ -57,9 +62,8 @@
     <android.support.design.widget.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="@dimen/icon_normal"
-        android:layout_gravity="end"
         android:layout_margin="@dimen/margin_xxxxlarge"
         app:elevation="5dp"
         app:srcCompat="@drawable/ic_dialpad" />
 
-</FrameLayout>
+</RelativeLayout>

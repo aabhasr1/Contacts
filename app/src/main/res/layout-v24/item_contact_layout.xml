@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_normal"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_normal">
+
+        <com.github.florent37.shapeofview.shapes.CircleView
+            android:layout_width="@dimen/icon_normal"
+            android:layout_height="@dimen/icon_normal"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/margin_xxlarge"
+            android:layout_marginStart="@dimen/margin_xxxlarge"
+            android:forceHasOverlappingRendering="true"
+            app:shape_circle_borderColor="@android:color/darker_gray"
+            app:shape_circle_borderWidth="1dp">
+
+            <ImageView
+                android:id="@+id/item_contact_picture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                app:srcCompat="@drawable/ic_contact_image_placeholder" />
+
+        </com.github.florent37.shapeofview.shapes.CircleView>
+
+        <TextView
+            android:id="@+id/item_contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_xxlarge"
+            android:fontFamily="serif-monospace"
+            android:textSize="@dimen/text_xxxlarge"
+            android:textStyle="bold"
+            tools:text="Aabhas Jindal" />
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/off_white"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_xxsmall"
+            android:paddingEnd="@dimen/padding_xxxlarge"
+            android:paddingStart="@dimen/padding_xxxlarge"
+            android:paddingTop="@dimen/padding_xxsmall"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/item_call_primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_marginStart="@dimen/margin_small"
+                android:padding="@dimen/padding_normal"
+                app:srcCompat="@drawable/ic_call_primary" />
+
+            <ImageView
+                android:id="@+id/item_call_secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_marginStart="@dimen/margin_small"
+                android:padding="@dimen/padding_normal"
+                app:srcCompat="@drawable/ic_call_primary" />
+
+            <ImageView
+                android:id="@+id/item_sms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_marginStart="@dimen/margin_small"
+                android:padding="@dimen/padding_normal"
+                app:srcCompat="@drawable/ic_sms" />
+
+            <ImageView
+                android:id="@+id/item_video_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/margin_xsmall"
+                android:layout_marginStart="@dimen/margin_xsmall"
+                android:paddingStart="@dimen/padding_small"
+                android:paddingEnd="@dimen/padding_small"
+                android:paddingTop="@dimen/padding_xxxsmall"
+                android:paddingBottom="@dimen/padding_small"
+                app:srcCompat="@drawable/ic_video_call" />
+
+            <ImageView
+                android:id="@+id/item_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/margin_xsmall"
+                android:layout_marginStart="@dimen/margin_xsmall"
+                android:paddingStart="@dimen/padding_small"
+                android:paddingEnd="@dimen/padding_small"
+                android:paddingTop="@dimen/padding_xsmall"
+                android:paddingBottom="@dimen/padding_normal"
+                app:srcCompat="@drawable/ic_info_outline" />
+
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+    <View style="@style/Divider"/>
+
+</LinearLayout>

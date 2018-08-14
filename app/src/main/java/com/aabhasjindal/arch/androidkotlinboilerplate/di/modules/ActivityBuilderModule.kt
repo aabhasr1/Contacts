@@ -2,6 +2,7 @@ package com.aabhasjindal.arch.androidkotlinboilerplate.di.modules
 
 import com.aabhasjindal.arch.androidkotlinboilerplate.views.main.MainActivity
 import com.aabhasjindal.arch.androidkotlinboilerplate.views.main.MainActivityModule
+import com.aabhasjindal.arch.androidkotlinboilerplate.views.main.MainFragmentBuilderModule
 import com.aabhasjindal.arch.androidkotlinboilerplate.views.test.TestActivity
 import com.aabhasjindal.arch.androidkotlinboilerplate.views.test.TestActivityModule
 import com.aabhasjindal.arch.androidkotlinboilerplate.views.test.TestFragmentBuilderModule
@@ -14,7 +15,7 @@ import dagger.android.ContributesAndroidInjector
 @Module
 abstract class ActivityBuilderModule {
 
-    @ContributesAndroidInjector(modules = [MainActivityModule::class])
+    @ContributesAndroidInjector(modules = [MainActivityModule::class,MainFragmentBuilderModule::class])
     abstract fun bindMainActivity(): MainActivity
 
     @ContributesAndroidInjector(modules = [TestActivityModule::class , TestFragmentBuilderModule::class])

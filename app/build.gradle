@@ -32,11 +32,12 @@ android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "com.aabhasjindal.arch.androidkotlinboilerplate"
-        minSdkVersion 24
+        minSdkVersion 19
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
         release {
@@ -113,7 +114,7 @@ dependencies {
     implementation 'com.github.Yalantis:OfficialFoldingTabBar.Android:v0.9'
     implementation 'com.github.GrenderG:Toasty:1.3.0'
     implementation 'com.github.florent37:runtime-permission-kotlin:1.0.1'
-    implementation 'com.github.florent37:shapeofview:1.1.2'
+    implementation 'com.github.florent37:shapeofview:1.2.0'
 
     //error and Crash Reporting
     implementation('com.crashlytics.sdk.android:crashlytics:2.9.4@aar') {

@@ -33,9 +33,5 @@ class MainActivity : BaseActivity() {
     }
 
     private fun updateview(mList : List<String>) {
-        tv1.text = mList[0]
-        tv2.text = mList[1]
-        tv3.text = mList[2]
-        tv4.text = mList[3]
     }
 }

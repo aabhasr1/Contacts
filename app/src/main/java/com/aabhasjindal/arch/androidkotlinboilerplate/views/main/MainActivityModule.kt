@@ -9,5 +9,5 @@ import dagger.Provides
 @Module
 class MainActivityModule {
     @Provides
-    fun provideTestData(): List<String> = ArrayList()
+    fun provideMainActivity() : MainActivity = MainActivity()
 }
